@@ -1,0 +1,112 @@
+Dla malej liczby podobnych par:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.030000        0.000000        0.010000
+Global:                 0.030000        0.000000        0.010000
+
+Dla sredniej liczby podobnych par:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.050000        0.000000        0.020000
+Global:                 0.050000        0.000000        0.020000
+
+Dla duzej liczby podobnych par:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.100000        0.010000        0.050000
+Global:                 0.100000        0.010000        0.050000
+
+Dla sredniej liczby niepodobnych do siebie par:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.050000        0.000000        0.020000
+Global:                 0.050000        0.000000        0.020000
+
+Dla duzej liczby niepodobnych do siebie par:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.100000        0.000000        0.050000
+Global:                 0.100000        0.000000        0.050000
+
+Dla malej liczby niepodobnych do siebie par:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.020000        0.000000        0.000000
+Global:                 0.020000        0.000000        0.000000
+
+Usuwanie duzej liczby blokow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.110000        0.000000        0.050000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Global:                 0.110000        0.000000        0.050000
+
+Usuwanie sredniej liczby blokow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.050000        0.000000        0.020000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Global:                 0.050000        0.000000        0.020000
+
+Usuwanie malej liczby blokow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.020000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Global:                 0.020000        0.000000        0.000000
+
+Dodawanie i usuwanie blokow na przemian:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.010000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Comparing:              0.010000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Comparing:              0.010000        0.000000        0.010000
+Removing block:         0.000000        0.000000        0.000000
+Comparing:              0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Global:                 0.030000        0.000000        0.010000
+
+Wnioski - im wieksza liczba blokow do przeanalizowania, tym wiekszy czas dzialania programu. Podobienstwo zawartosci plikow nie ma wiekszego znaczenia.

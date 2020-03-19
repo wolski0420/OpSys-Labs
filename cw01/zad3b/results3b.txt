@@ -1,0 +1,476 @@
+==================================
+
+gcc -O0 -c library.c
+gcc -O0 -c main.c
+gcc -O0 main.o library.o -o output
+
+==================================
+
+Porownanie malej liczby podobnych plikow:
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.080000        0.000000        0.000000
+Global:                 0.080000        0.000000        0.000000
+
+Porownanie sredniej liczby podobnych plikow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.110000        0.000000        0.040000
+Global:                 0.110000        0.000000        0.040000
+
+Porownanie duzej liczby podobnych plikow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.180000        0.000000        0.040000
+Global:                 0.190000        0.000000        0.040000
+
+Porownanie duzej liczby niepodobnych plikow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.080000        0.000000        0.040000
+Global:                 0.080000        0.000000        0.040000
+
+Porownanie sredniej liczby niepodobnych plikow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.040000        0.000000        0.010000
+Global:                 0.040000        0.000000        0.010000
+
+Porownanie malej liczby niepodobnych plikow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.010000        0.000000        0.000000
+Global:                 0.010000        0.000000        0.000000
+
+Usuwanie duzej liczby blokow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.080000        0.000000        0.040000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Global:                 0.080000        0.000000        0.040000
+
+Usuwanie sredniej liczby blokow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.030000        0.000000        0.010000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Global:                 0.030000        0.000000        0.010000
+
+Usuwanie malej liczby blokow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.010000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Global:                 0.010000        0.000000        0.000000
+
+Naprzemienne dodawanie i usuwanie blokow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.010000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Comparing:              0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Comparing:              0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Comparing:              0.010000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Global:                 0.020000        0.000000        0.000000
+
+==================================
+
+gcc -O1 -c library.c
+gcc -O1 -c main.c
+gcc -O1 main.o library.o -o output
+
+==================================
+
+Porownanie malej liczby podobnych plikow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.010000        0.000000        0.000000
+Global:                 0.010000        0.000000        0.000000
+
+Porownanie sredniej liczby podobnych plikow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.040000        0.000000        0.010000
+Global:                 0.040000        0.000000        0.010000
+
+Porownanie duzej liczby podobnych plikow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.070000        0.000000        0.040000
+Global:                 0.070000        0.000000        0.040000
+
+Porownanie duzej liczby niepodobnych plikow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.070000        0.000000        0.040000
+Global:                 0.070000        0.000000        0.040000
+
+Porownanie sredniej liczby niepodobnych plikow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.040000        0.000000        0.020000
+Global:                 0.040000        0.000000        0.020000
+
+Porownanie malej liczby niepodobnych plikow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.010000        0.000000        0.000000
+Global:                 0.010000        0.000000        0.000000
+
+Usuwanie duzej liczby blokow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.070000        0.000000        0.040000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Global:                 0.070000        0.000000        0.040000
+
+Usuwanie sredniej liczby blokow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.030000        0.000000        0.010000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Global:                 0.030000        0.000000        0.010000
+
+Usuwanie malej liczby blokow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.010000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Global:                 0.010000        0.000000        0.000000
+
+Naprzemienne dodawanie i usuwanie blokow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Comparing:              0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Comparing:              0.010000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Comparing:              0.010000        0.000000        0.010000
+Removing block:         0.000000        0.000000        0.000000
+Global:                 0.020000        0.000000        0.010000
+
+==================================
+
+gcc -O2 -c library.c
+gcc -O2 -c main.c
+gcc -O2 main.o library.o -o output
+
+==================================
+
+Porownanie malej liczby podobnych plikow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.020000        0.000000        0.000000
+Global:                 0.020000        0.000000        0.000000
+
+Porownanie sredniej liczby podobnych plikow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.030000        0.000000        0.010000
+Global:                 0.030000        0.000000        0.010000
+
+Porownanie duzej liczby podobnych plikow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.080000        0.000000        0.040000
+Global:                 0.080000        0.000000        0.040000
+
+Porownanie duzej liczby niepodobnych plikow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.070000        0.000000        0.040000
+Global:                 0.070000        0.000000        0.040000
+
+Porownanie sredniej liczby niepodobnych plikow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.040000        0.000000        0.010000
+Global:                 0.040000        0.000000        0.010000
+
+Porownanie malej liczby niepodobnych plikow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.010000        0.000000        0.000000
+Global:                 0.010000        0.000000        0.000000
+
+Usuwanie duzej liczby blokow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.090000        0.010000        0.050000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Global:                 0.090000        0.010000        0.050000
+
+Usuwanie sredniej liczby blokow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.030000        0.000000        0.010000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Global:                 0.030000        0.000000        0.010000
+
+Usuwanie malej liczby blokow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.010000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Global:                 0.010000        0.000000        0.000000
+
+Naprzemienne dodawanie i usuwanie blokow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Comparing:              0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Comparing:              0.010000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Comparing:              0.010000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Global:                 0.020000        0.000000        0.000000
+
+==================================
+
+gcc -Os -c library.c
+gcc -Os -c main.c
+gcc -Os main.o library.o -o output
+
+==================================
+
+Porownanie malej liczby podobnych plikow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.010000        0.000000        0.000000
+Global:                 0.010000        0.000000        0.000000
+
+Porownanie sredniej liczby podobnych plikow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.040000        0.000000        0.010000
+Global:                 0.040000        0.000000        0.010000
+
+Porownanie duzej liczby podobnych plikow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.080000        0.000000        0.040000
+Global:                 0.080000        0.000000        0.040000
+
+Porownanie duzej liczby niepodobnych plikow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.080000        0.000000        0.040000
+Global:                 0.080000        0.000000        0.040000
+
+Porownanie sredniej liczby niepodobnych plikow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.040000        0.000000        0.010000
+Global:                 0.040000        0.000000        0.010000
+
+Porownanie malej liczby niepodobnych plikow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.010000        0.000000        0.000000
+Global:                 0.010000        0.000000        0.000000
+
+Usuwanie duzej liczby blokow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.070000        0.000000        0.050000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Global:                 0.070000        0.000000        0.050000
+
+Usuwanie sredniej liczby blokow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.030000        0.000000        0.010000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Global:                 0.040000        0.000000        0.010000
+
+Usuwanie malej liczby blokow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Global:                 0.000000        0.000000        0.000000
+
+Naprzemienne dodawanie i usuwanie blokow:
+
+                        Real            System          User
+Creating:               0.000000        0.000000        0.000000
+Comparing:              0.010000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Comparing:              0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Comparing:              0.010000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Comparing:              0.000000        0.000000        0.000000
+Removing block:         0.000000        0.000000        0.000000
+Global:                 0.020000        0.000000        0.000000
+
+Widoczne sa niewielkie roznice we wszystkich czasach. Wprowadzenie optymalizacji, moze miec wplyw dla zdecydowanie wiekszych wygenerowanych danych, jednak przy takich mniejszych danych jak te wpisane recznie, roznice sa mniej dostrzegalne.

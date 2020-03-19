@@ -1,0 +1,93 @@
+Number of records: 3000, Length of record: 1
+                System          User
+Copying by sys  0.010000        0.000000
+Copying by lib  0.000000        0.000000
+Sorting by sys  0.780000        0.560000
+Sorting by lib  0.830000        0.650000
+
+Number of records: 15000, Length of record: 1
+                System          User
+Copying by sys  0.040000        0.000000
+Copying by lib  0.000000        0.000000
+Sorting by sys  24.010000       17.680000
+Sorting by lib  18.330000       16.290000
+
+Number of records: 20000, Length of record: 4
+                System          User
+Copying by sys  0.030000        0.020000
+Copying by lib  0.010000        0.000000
+Sorting by sys  1.020000        0.730000
+Sorting by lib  1.090000        0.790000
+
+Number of records: 200000, Length of record: 4
+                System          User
+Copying by sys  0.390000        0.150000
+Copying by lib  0.000000        0.000000
+Sorting by sys  11.490000       9.020000
+Sorting by lib  12.230000       10.690000
+
+Number of records: 40000, Length of record: 512
+                System          User
+Copying by sys  0.100000        0.020000
+Copying by lib  0.020000        0.000000
+Sorting by sys  2.110000        1.510000
+Sorting by lib  2.550000        2.070000
+
+Number of records: 400000, Length of record: 512
+                System          User
+Copying by sys  0.890000        0.260000
+Copying by lib  0.210000        0.090000
+Sorting by sys  27.000000       20.190000
+Sorting by lib  31.760000       26.520000
+
+Number of records: 80000, Length of record: 1024
+                System          User
+Copying by sys  0.170000        0.090000
+Copying by lib  0.080000        0.010000
+Sorting by sys  5.110000        3.630000
+Sorting by lib  6.020000        5.150000
+
+Number of records: 800000, Length of record: 1024
+                System          User
+Copying by sys  2.120000        0.450000
+Copying by lib  0.820000        0.370000
+Sorting by sys  57.970000       42.910000
+Sorting by lib  72.430000       59.570000
+
+// tutaj zmniejszam liczbe rekordow ze wzgledu na duza liczbe pamieci jaka zajmowaly pliki...
+
+Number of records: 20000, Length of record: 4096
+                System          User
+Copying by sys  0.060000        0.020000
+Copying by lib  0.110000        0.010000
+Sorting by sys  1.390000        0.800000
+Sorting by lib  1.790000        1.240000
+
+Number of records: 200000, Length of record: 4096
+                System          User
+Copying by sys  0.380000        1.680000
+Copying by lib  0.660000        2.560000
+Sorting by sys  21.130000       9.510000
+Sorting by lib  26.100000       16.450000
+
+Number of records: 10000, Length of record: 8192
+                System          User
+Copying by sys  0.070000        0.020000
+Copying by lib  0.090000        0.000000
+Sorting by sys  0.870000        0.460000
+Sorting by lib  1.120000        0.640000
+
+Number of records: 100000, Length of record: 8192
+                System          User
+Copying by sys  0.640000        0.060000
+Copying by lib  0.580000        1.120000
+Sorting by sys  10.830000       5.200000
+Sorting by lib  13.380000       7.890000
+
+// wnioski
+Po pierwsze w praktycznie wszystkich przypadkach czas użytkownika jest mniejszy od czasu systemowego,
+niezależnie od ilości rekordów i ich długości. Po drugie z łatwością można zauważyć, że im więcej
+generujemy rekordów tym dłużej trwają operacje sortowania i kopiowania (a w każdym razie tak mówi
+większość powyższych wyników). Po trzecie czas tych operacji jest tym większy tym mniejsze są wielkości
+rekordów. Finalnie dodam, że operacje kopiowania i sortowania są efektywniejsze na funkcjach systemowych, 
+w powyższych wynikach widoczne są niewielkie różnice na niekorzyść funkcji bibliotecznych.

@@ -1,0 +1,108 @@
+Mala liczba par w sekwencji - 2, pliki w parze podobne do siebie
+
+			Real		System		User
+Creating:		0.000000	0.000000	0.000000
+Comparing:		0.020000	0.000000	0.000000
+Global:			0.020000	0.000000	0.000000
+
+Srednia liczba par w sekwencji - 8, pliki w parze podobne do siebie
+
+			Real		System		User
+Creating:		0.000000	0.000000	0.000000
+Comparing:		0.060000	0.000000	0.030000
+Global:			0.060000	0.000000	0.030000
+
+Duza liczba par w sekwencji - 24, pliki w parze podobne do siebie
+
+			Real		System		User
+Creating:		0.000000	0.000000	0.000000
+Comparing:		0.100000	0.010000	0.060000
+Global:			0.100000	0.010000	0.060000
+
+Mala liczba par w sekwencji - 2, pliki w parze niepodobne do siebie
+
+			Real		System		User
+Creating:		0.000000	0.000000	0.000000
+Comparing:		0.010000	0.000000	0.000000
+Global:			0.010000	0.000000	0.000000
+
+Srednia liczba par w sekwencji - 8, pliki w parze niepodobne do siebie
+
+			Real		System		User
+Creating:		0.000000	0.000000	0.000000
+Comparing:		0.050000	0.000000	0.020000
+Global:			0.050000	0.000000	0.020000
+
+Duza liczba par w sekwencji - 24, pliki w parze niepodobne do siebie
+
+			Real		System		User
+Creating:		0.000000	0.000000	0.000000
+Comparing:		0.110000	0.010000	0.050000
+Global:			0.110000	0.010000	0.050000
+
+Usuniecie wszystkich blokow dla duzej liczby par - 24
+
+			Real		System		User
+Creating:		0.000000	0.000000	0.000000
+Comparing:		0.080000	0.000000	0.050000
+Removing block:		0.000000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Global:			0.080000	0.000000	0.050000
+
+Usuniecie wszystkich blokow dla sredniej liczby par - 8
+
+			Real		System		User
+Creating:		0.000000	0.000000	0.000000
+Comparing:		0.040000	0.010000	0.010000
+Removing block:		0.000000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Global:			0.040000	0.010000	0.010000
+
+Usuniecie wszystkich blokow dla malej liczby par - 2
+
+			Real		System		User
+Creating:		0.000000	0.000000	0.000000
+Comparing:		0.010000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Global:			0.010000	0.000000	0.000000
+
+Porownywanie (dodawanie blokow) na przemian z usuwanie blokow
+
+			Real		System		User
+Creating:		0.000000	0.000000	0.000000
+Comparing:		0.010000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Comparing:		0.010000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Comparing:		0.000000	0.000000	0.010000
+Removing block:		0.000000	0.000000	0.000000
+Comparing:		0.010000	0.000000	0.000000
+Removing block:		0.000000	0.000000	0.000000
+Global:			0.030000	0.000000	0.010000
+
