@@ -4,7 +4,7 @@
 int get_col_number(char *path_to_matrix){
     FILE *matrix = fopen(path_to_matrix,"r");
 
-    // getting first line
+    //getting first line
     size_t length = 0;
     char *line = NULL;
     getline(&line,&length,matrix);
@@ -15,6 +15,8 @@ int get_col_number(char *path_to_matrix){
         counter++;
         line++;
     }
+
+    fclose(matrix);
 
     return counter+1;
 }
@@ -30,6 +32,8 @@ int get_row_number(char *path_to_matrix){
     while((getline(&line,&length,matrix)) != EOF){
         rows_number++;
     }
+
+    fclose(matrix);
 
     return rows_number;
 }
@@ -71,21 +75,72 @@ struct Matrix load_matrix_from_file(char *path_to_matrix){
             row_index++;
         }
 
-    fclose(matrix);
+        fclose(matrix);
     }
 
     return matrix_to_return;
 }
 
+// this function creates zeros matrix in file
 void create_empty_matrix(int rows, int cols, char* filename){
     FILE* file = fopen(filename, "w+");
    
-    // printinf zeros to file
+    // printing zeros to file
     for (int i=0; i<rows; i++){
         for (int j=0; j<cols; j++){
             fprintf(file, "%d", 0);
             
             if (j<cols-1) {
+                fprintf(file, " ");
+            }
+        }
+
+        fprintf(file, "\n");
+    }
+
+    fclose(file);
+}
+
+// it multiplies matrices and returns the result matrix
+struct Matrix multiply_matrices(struct Matrix first, struct Matrix second){
+    // creating new matrix
+    struct Matrix result;
+    result.cols = second.cols;
+    result.rows = first.rows;
+
+    // allocating memory for matrix
+    result.numbers = calloc(result.rows,sizeof(int*));
+    for(int i=0; i<result.rows; i++){
+        result.numbers[i] = calloc(result.cols,sizeof(int));
+    }
+
+    // multiplying all matrices
+    for(int i=0; i<first.rows; i++){
+        for(int j=0; j<second.cols; j++){
+            int cell_value = 0;
+
+            for(int k=0; k<first.cols; k++){
+                cell_value += first.numbers[i][k] * second.numbers[k][j];
+            }
+
+            result.numbers[i][j] = cell_value;
+        }
+    }
+
+    return result;
+}
+
+// it creates a matrix in file with random values
+void create_rand_matrix_in_file(int rows, int columns, char *filename){
+    FILE* file = fopen(filename, "w+");
+   
+    // printinf zeros to file
+    for (int i=0; i<rows; i++){
+        for (int j=0; j<columns; j++){
+            int random_value = rand()%100;
+            fprintf(file, "%d",random_value );
+            
+            if (j<columns-1) {
                 fprintf(file, " ");
             }
         }

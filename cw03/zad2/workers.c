@@ -1,12 +1,5 @@
 #include "workers.h"
 
-// structure to hold index of pair matrices which process wants to multiply
-// and index of column which the process wants to multiply only
-struct Task{
-    int pair_index;
-    int column_index;
-};
-
 // it returns number of digits of number given in argument
 int get_digits_number(int number){
     int test_number = number;
@@ -118,11 +111,14 @@ void multiply(char* a_filename, char* b_filename, int col_index, int pair_index)
             result += first.numbers[i][j] * second.numbers[j][col_index];
         }
 
-        if(i == first.rows -1) fprintf(part_file, "%d ", result);
-        else fprintf(part_file, "%d \n", result);
+        if(i == first.rows -1) fprintf(part_file, "%d", result);
+        else fprintf(part_file, "%d\n", result);
     }
 
     fclose(part_file);
+    free(filename);
+    free(pair_index_char);
+    free(col_index_char);
 }
 
 // it multiplies col_index from second matrix per every first matrix row and write the result to the result matrix and to one specific file
@@ -192,9 +188,10 @@ int process_work(char   **a_matrices, char  **b_matrices, char **c_matrices, int
     }
 
     // we returns the number of multiplications which process has done
-    return multi_count;
+    exit(multi_count);
 }
 
+// this is the majority function which takes path to the list of matrices and creates processes which will be multiplying these matrices
 int manage_process(char *list_path, int processes_number, int max_time, int mode){
     FILE *list = fopen(list_path, "r");
 
@@ -276,7 +273,7 @@ int manage_process(char *list_path, int processes_number, int max_time, int mode
         pid_t worker_pid = fork();          // creating worker process
 
         if (worker_pid == 0){
-            return process_work(a_matrices, b_matrices, c_matrices, max_time, mode, pairs_number);   // child process starts working
+            exit(process_work(a_matrices, b_matrices, c_matrices, max_time, mode, pairs_number));   // child process starts working
         }
         else{
             child_processes[i] = worker_pid;    // parent process writes child process pid to array
@@ -296,11 +293,11 @@ int manage_process(char *list_path, int processes_number, int max_time, int mode
             // getting number of digits in number identifying pair
             int counter = get_digits_number(i);
 
-            // creating command to paste all results: "paste .program/part%%* > filename"
-            char *command = calloc(19+counter+5+strlen(c_matrices[i])+1, sizeof(char));
+            // creating command to paste all results: "paste -d \" \" .program/part%%* > filename"
+            char *command = calloc(26+counter+5+strlen(c_matrices[i])+1, sizeof(char));
             char *pair_index_char = calloc(counter +1,sizeof(char));
             sprintf(pair_index_char,"%d",i);
-            strcpy(command,"paste .program/part");
+            strcpy(command,"paste -d \" \" .program/part");
             strcat(command,pair_index_char);
             strcat(command,"_* > ");
             strcat(command,c_matrices[i]);
@@ -314,6 +311,7 @@ int manage_process(char *list_path, int processes_number, int max_time, int mode
     }
 
     free(child_processes);
+    fclose(list);
 
     return 0;
 }
