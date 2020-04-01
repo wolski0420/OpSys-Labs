@@ -5,7 +5,7 @@
 
 int stop_identifier = 0;    // this variable decide to continue or pause printing
 
-void sigstp_handle(){   // here we only stop printing
+void sigstp_handle(int signum){   // here we only stop printing
     if(stop_identifier == 1){
         stop_identifier = 0;
     }
@@ -15,7 +15,7 @@ void sigstp_handle(){   // here we only stop printing
     }
 }
 
-void sigint_handle(){   // it stops program
+void sigint_handle(int signum){   // it stops program
     printf("Odebrano sygnal SIGINT\n");
     exit(0);
 }
