@@ -25,7 +25,9 @@ int main(int argc, char **argv){
     struct sigaction actionSIG;
     actionSIG.sa_handler = sigstp_handle;
     actionSIG.sa_flags = 0;
-    sigemptyset(&actionSIG.sa_mask);
+    sigfillset(&actionSIG.sa_mask);
+    sigdelset(&actionSIG.sa_mask,SIGINT);   // blocking all signals without stop and exit
+    sigdelset(&actionSIG.sa_mask,SIGTSTP);  // because user should only use these signals
     sigaction(SIGTSTP,&actionSIG,NULL);
 
     // end signal
