@@ -1,0 +1,29 @@
+./output exec mask
+User signal is visible in process!
+User signal is visible in exec child!
+
+./output exec pending
+User signal is visible in process!
+User signal is visible in exec child!
+
+./output exec ignore
+
+
+./output fork pending
+User signal is visible in process!
+User signal is not visible in fork child!
+
+./output fork mask
+User signal is visible in process!
+User signal is visible in fork child!
+
+./output fork handler
+Received user signal
+Received user signal
+
+./output fork ignore
+
+
+Wnioski:
+Proces potomny utworzony przy pomocy fork() dziedziczy maskowanie handlery i ignorowanie, nie dziedziczy zaś pending.
+Proces potomny utworzony przy pomocy exec() dziedziczy maskowanie, ignorowanie i pending.
