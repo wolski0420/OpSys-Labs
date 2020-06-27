@@ -1,0 +1,80 @@
+./main 1 sign brain_604.ascii.pgm brain_604_result.ascii.pgm
+Time of 0 threat work is: 3758 us
+Total time of everything is: 3969 us
+
+./main 2 sign brain_604.ascii.pgm brain_604_result.ascii.pgm
+Time of 0 threat work is: 4937 us
+Time of 1 threat work is: 4525 us
+Total time of everything is: 5152 us
+
+./main 4 sign brain_604.ascii.pgm brain_604_result.ascii.pgm
+Time of 0 threat work is: 4093 us
+Time of 1 threat work is: 4473 us
+Time of 2 threat work is: 4117 us
+Time of 3 threat work is: 3988 us
+Total time of everything is: 8375 us
+
+./main 8 sign brain_604.ascii.pgm brain_604_result.ascii.pgm
+Time of 0 threat work is: 2542 us
+Time of 1 threat work is: 6338 us
+Time of 2 threat work is: 3781 us
+Time of 3 threat work is: 10324 us
+Time of 4 threat work is: 3357 us
+Time of 5 threat work is: 3266 us
+Time of 6 threat work is: 3098 us
+Time of 7 threat work is: 3564 us
+Total time of everything is: 14527 us
+
+./main 1 block brain_604.ascii.pgm brain_604_result.ascii.pgm
+Time of 0 threat work is: 2341 us
+Total time of everything is: 2568 us
+
+./main 2 block brain_604.ascii.pgm brain_604_result.ascii.pgm
+Time of 0 threat work is: 1168 us
+Time of 1 threat work is: 1211 us
+Total time of everything is: 1400 us
+
+./main 4 block brain_604.ascii.pgm brain_604_result.ascii.pgm
+Time of 0 threat work is: 553 us
+Time of 1 threat work is: 552 us
+Time of 2 threat work is: 574 us
+Time of 3 threat work is: 506 us
+Total time of everything is: 1284 us
+
+./main 8 block brain_604.ascii.pgm brain_604_result.ascii.pgm
+Time of 0 threat work is: 308 us
+Time of 1 threat work is: 280 us
+Time of 2 threat work is: 282 us
+Time of 3 threat work is: 254 us
+Time of 4 threat work is: 251 us
+Time of 5 threat work is: 273 us
+Time of 6 threat work is: 252 us
+Time of 7 threat work is: 256 us
+Total time of everything is: 1164 us
+
+./main 1 interleaved brain_604.ascii.pgm brain_604_result.ascii.pgm
+Time of 0 threat work is: 1796 us
+Total time of everything is: 1965 us
+
+./main 2 interleaved brain_604.ascii.pgm brain_604_result.ascii.pgm
+Time of 0 threat work is: 621 us
+Time of 1 threat work is: 607 us
+Total time of everything is: 745 us
+
+./main 4 interleaved brain_604.ascii.pgm brain_604_result.ascii.pgm
+Time of 0 threat work is: 334 us
+Time of 1 threat work is: 326 us
+Time of 2 threat work is: 320 us
+Time of 3 threat work is: 306 us
+Total time of everything is: 756 us
+
+./main 8 interleaved brain_604.ascii.pgm brain_604_result.ascii.pgm
+Time of 0 threat work is: 204 us
+Time of 1 threat work is: 191 us
+Time of 2 threat work is: 176 us
+Time of 3 threat work is: 164 us
+Time of 4 threat work is: 170 us
+Time of 5 threat work is: 186 us
+Time of 6 threat work is: 176 us
+Time of 7 threat work is: 200 us
+Total time of everything is: 919 us
